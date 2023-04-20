@@ -27,7 +27,37 @@
                 </div>
                 <div>
                     <ul class="nav">
-                        <li class="nav-item"><a href="" class="nav-link active">LogIn</a></li>
+                        <li class="nav-item"><a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop">LogIn</a>
+                            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="staticBackdropLabel">Log In</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                              <input type="email" class="form-control" id="inputEmail3">
+                                            </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                              <input type="password" class="form-control" id="inputPassword3">
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Don't have an account <button type="button" class="btn btn-primary">SignUp</button> here</p>
+                                            </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Log In</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
                         <li class="nav-item"><a href="" class="nav-link">SignUp</a></li>
                     </ul>
                 </div>
@@ -124,6 +154,6 @@
         </div>
     </div>
 
-    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
