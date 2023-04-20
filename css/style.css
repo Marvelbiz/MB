@@ -1,0 +1,153 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.background{
+    position: absolute;
+    width: 100%;
+    min-height:100%;
+    right: 0;
+}
+
+.background video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.overlay{
+    position:absolute;
+    background-color: rgba(9, 73, 250, 0.041);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    
+}
+
+.logo{
+    position: relative;
+    padding: 50px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo p{
+    text-transform: uppercase;
+    font-size: 30px;
+    color:rgb(17, 248, 229);
+    font-family: 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.logo ul{
+    list-style: none;
+}
+
+.logo li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.863);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu i{
+    color: rgb(17, 248, 229);
+    font-size: 25px;
+    border: 2px solid rgb(17, 248, 229);
+    padding: 5px;
+}
+
+.sub-menu{
+    position: absolute;
+    display: none;
+    left: -30px;
+}
+
+.sub-menu li{
+    margin: 10px;
+    background-color: rgb(17, 248, 229);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.menu:hover .sub-menu{
+    display: block;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 50px 0;
+    top: 29%;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-text{
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
+
+.text h1{
+    color: rgb(17, 248, 229);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 40px;
+}
+
+.text span{
+    color: white;
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+
+}
+
+.text p a{
+    text-decoration: none;
+    color: unset;
+}
+
+.text p{
+    position: relative;
+    display: inline;
+    color:white;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 4px 3px 10px 0px rgb(17, 248, 229);
+    width: 100px;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.text p::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(17, 248, 229, 0.822);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+}
+
+.text p:hover::after{
+    width: 100%;
+    transition: 1s;
+}
