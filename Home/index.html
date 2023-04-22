@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <ul class="nav">
-                        <li class="nav-item"><a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop">LogIn</a>
+                        <li class="nav-item"><a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log In</a>
                             <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
@@ -36,7 +36,8 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="row mb-3">
+                                          <form action="">
+                                              <div class="row mb-3">
                                             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                             <div class="col-sm-10">
                                               <input type="email" class="form-control" id="inputEmail3">
@@ -48,17 +49,64 @@
                                               <input type="password" class="form-control" id="inputPassword3">
                                             </div>
                                             <div>
-                                                <p class="text-center">Don't have an account <button type="button" class="btn btn-primary">SignUp</button> here</p>
+                                                <p class="text-center">Don't have an account yet? <button data-bs-toggle="modal" data-bs-target="#staticBackdrop-i" type="button" class="btn btn-primary m-2">SignUp</button> here</p>
                                             </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Log In</button>
+                                          </div>
+                                          </form>
                                     </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-primary">Log In</button>
-                                    </div>
-                                  </div>
                                 </div>
                               </div>
+                            </div>
                         </li>
-                        <li class="nav-item"><a href="" class="nav-link">SignUp</a></li>
+                        <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop-i">SignUp</a>
+                          <div class="modal fade " id="staticBackdrop-i" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">  
+                                  <form action="" class="g-3">
+                                      <div class="row m-3">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                    </div>
+                                  </div>
+                                  <div class="row m-3">
+                                    <div class="col">
+                                      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                    </div>
+                                    <div class="col">
+                                      <input type="tel"  class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                                    </div>
+                                  </div>
+                                  <div class="row m-3">
+                                    <div class="col">
+                                      <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                                    </div>
+                                    <div class="col">
+                                      <input type="password"  class="form-control" placeholder="Confirm password" aria-label="Confirm Password">
+                                    </div>
+                                  </div>
+                                  <div class="row m-3">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Refferal Code(Optional)" aria-label="Code">
+                                    </div>
+                                  </div>
+                                  <p>Already have an account? <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log In</button></p>
+                                   <div class="col-12 m-3">
+                                      <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -151,6 +199,16 @@
         <div>
             <h2 class="ms-5 fs-1 text-light">Popular Videos</h2>
             
+        </div>
+
+        <div>
+          <h2 class="ms-5 fs-1 text-light">Popular Musics</h2>
+
+        </div>
+
+        <div>
+            <h2 class="ms-5 fs-1 text-light">Popular Animes</h2>
+
         </div>
     </div>
 
